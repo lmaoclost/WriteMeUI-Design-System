@@ -1,1 +1,3 @@
-import {} from "@writeme-ui/tokens";
+import { colors } from '@writeme-ui/tokens'
+
+console.log(colors)
