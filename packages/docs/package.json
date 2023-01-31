@@ -25,6 +25,7 @@
     "vite": "^4.0.4"
   },
   "dependencies": {
+    "@storybook/addon-a11y": "^6.5.16",
     "@writeme-ui/eslint-config": "*",
     "@writeme-ui/react": "*",
     "@writeme-ui/tokens": "*",
