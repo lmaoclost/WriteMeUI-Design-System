@@ -1,0 +1,6 @@
+{
+  "extends": "@writeme-ui/ts-config/base.json",
+  "include": [
+    "src"
+  ]
+}

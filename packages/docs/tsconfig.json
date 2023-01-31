@@ -1,0 +1,6 @@
+{
+  "extends": "@writeme-ui/ts-config/react.json",
+  "include": [
+    "src"
+  ]
+}
