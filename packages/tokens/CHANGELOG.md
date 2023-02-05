@@ -1,7 +1,7 @@
 # @writeme-ui/tokens
 
-## 1.1.0
+## 1.2.0
 
 ### Minor Changes
 
-- 72c3ad9: Added core components
+- a2b8914: Added core components

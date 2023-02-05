@@ -1,7 +1,8 @@
 # @writeme-ui/react
 
-## 1.1.0
+## 1.2.0
 
 ### Minor Changes
 
-- 72c3ad9: Added core components
+- b301d58: Added Rich Text Input
+- a2b8914: Added core components
