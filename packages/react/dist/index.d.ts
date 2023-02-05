@@ -4,6 +4,7 @@ import * as react from 'react';
 import { ComponentProps, ElementType } from 'react';
 import * as Avatar$1 from '@radix-ui/react-avatar';
 import * as Checkbox$1 from '@radix-ui/react-checkbox';
+import { ReactQuillProps } from 'react-quill';
 
 declare const Box: _stitches_react_types_styled_component.StyledComponent<"div", {}, {}, _stitches_react_types_css_util.CSS<{}, {
     colors: {
@@ -1681,4 +1682,11 @@ declare namespace MultiStep {
     var displayName: string;
 }
 
-export { Avatar, AvatarProps, Box, BoxProps, Button, ButtonProps, Checkbox, CheckboxProps, Heading, HeadingProps, MultiStep, MultiStepProps, Text, TextArea, TextAreaProps, TextInput, TextInputProps, TextProps };
+interface RichTextInputProps extends ReactQuillProps {
+}
+declare function RichTextInput({ ...props }: RichTextInputProps): JSX.Element;
+declare namespace RichTextInput {
+    var displayName: string;
+}
+
+export { Avatar, AvatarProps, Box, BoxProps, Button, ButtonProps, Checkbox, CheckboxProps, Heading, HeadingProps, MultiStep, MultiStepProps, RichTextInput, RichTextInputProps, Text, TextArea, TextAreaProps, TextInput, TextInputProps, TextProps };
