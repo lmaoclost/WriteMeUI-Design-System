@@ -7,9 +7,15 @@ export const QuillStyles = styled(ReactQuill, {
     fontFamily: '$default',
     fontSize: '$sm',
     fontWeight: 'regular',
+
     '&.ql-toolbar': {
       backgroundColor: '$gray600',
-
+      '.ql-active': {
+        svg: {
+          filter:
+            'invert(54%) sepia(38%) saturate(5322%) hue-rotate(176deg) brightness(117%) contrast(91%)',
+        },
+      },
       svg: {
         filter: 'invert(100) brightness(100)',
         '&:hover': {
