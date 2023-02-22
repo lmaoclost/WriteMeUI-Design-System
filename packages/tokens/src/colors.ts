@@ -11,8 +11,8 @@ export const colors = {
   gray800: '#202024',
   gray900: '#121214',
 
-  writeme300: '#16B8F3',
-  writeme500: '#006FA5',
-  writeme700: '#004D80',
-  writeme900: '#002D5C',
+  cyan300: '#16B8F3',
+  cyan500: '#006FA5',
+  cyan700: '#004D80',
+  cyan900: '#002D5C',
 }
