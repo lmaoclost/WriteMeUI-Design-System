@@ -16,7 +16,8 @@ export const colors = {
   cyan700: '#004D80',
   cyan900: '#002D5C',
 
-  danger: '#A50000',
-  success: '#00A500',
-  warning: '#A59900',
+  red300: '#A50000',
+  red500: '#F31616',
+  green: '#00A500',
+  yellow: '#A59900',
 }
