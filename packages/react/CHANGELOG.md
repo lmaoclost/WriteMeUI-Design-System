@@ -1,5 +1,12 @@
 # @writeme-ui/react
 
+## 1.4.0
+
+### Minor Changes
+
+- Added Semantic Colors
+  Added Button Variation Danger
+
 ## 1.3.1
 
 ### Patch Changes
