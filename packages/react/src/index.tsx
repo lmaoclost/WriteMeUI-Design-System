@@ -8,3 +8,5 @@ export * from './components/TextArea'
 export * from './components/Checkbox'
 export * from './components/MultiStep'
 export * from './components/RichTextInput'
+
+export * from './styles'
