@@ -1,5 +1,11 @@
 # @writeme-ui/react
 
+## 1.4.2
+
+### Patch Changes
+
+- f84159d: Fixed global css import on react-quill
+
 ## 1.4.1
 
 ### Patch Changes
