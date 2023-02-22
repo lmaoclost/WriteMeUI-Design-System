@@ -21,9 +21,14 @@ export const Button = styled('button', {
     width: '$4',
     height: '$4',
   },
+  transition: 'all ease-in-out 0.2s',
 
   '&:disabled': {
     cursor: 'not-allowed',
+  },
+
+  '&:focus': {
+    boxShadow: '0 0 0 2px $colors$cyan300',
   },
 
   variants: {
@@ -31,10 +36,10 @@ export const Button = styled('button', {
       primary: {
         color: '$white',
 
-        background: '$writeme500',
+        background: '$cyan500',
 
         '&:not(:disabled):hover': {
-          background: '$writeme300',
+          background: '$cyan300',
         },
 
         '&:disabled': {
@@ -43,12 +48,12 @@ export const Button = styled('button', {
       },
 
       secondary: {
-        color: '$writeme300',
+        color: '$cyan300',
 
-        border: '2px solid $writeme500',
+        border: '2px solid $cyan500',
 
         '&:not(:disabled):hover': {
-          background: '$writeme500',
+          background: '$cyan500',
 
           color: '$white',
         },
@@ -69,6 +74,19 @@ export const Button = styled('button', {
 
         '&:disabled': {
           color: '$gray600',
+        },
+      },
+      danger: {
+        color: '$white',
+
+        background: '$red300',
+
+        '&:not(:disabled):hover': {
+          background: '$red500',
+        },
+
+        '&:disabled': {
+          backgroundColor: '$gray600',
         },
       },
     },
