@@ -61,6 +61,7 @@ __export(src_exports, {
   Checkbox: () => Checkbox2,
   Heading: () => Heading,
   MultiStep: () => MultiStep,
+  RichTextInput: () => RichTextInput,
   Text: () => Text,
   TextArea: () => TextArea,
   TextInput: () => TextInput
@@ -528,6 +529,94 @@ function MultiStep({ size, currentStep = 1 }) {
   ] });
 }
 MultiStep.displayName = "MultiStep";
+
+// src/components/RichTextInput/index.tsx
+var import_quill_snow = require("react-quill/dist/quill.snow.css");
+
+// src/components/RichTextInput/styles.ts
+var import_react_quill = __toESM(require("react-quill"));
+var QuillStyles = styled(import_react_quill.default, {
+  ".ql-snow": {
+    border: 0,
+    fontFamily: "$default",
+    fontSize: "$sm",
+    fontWeight: "regular",
+    "&.ql-toolbar": {
+      backgroundColor: "$gray600",
+      ".ql-active": {
+        svg: {
+          filter: "invert(54%) sepia(38%) saturate(5322%) hue-rotate(176deg) brightness(117%) contrast(91%)"
+        }
+      },
+      svg: {
+        filter: "invert(100) brightness(100)",
+        "&:hover": {
+          filter: "invert(54%) sepia(38%) saturate(5322%) hue-rotate(176deg) brightness(117%) contrast(91%)"
+        }
+      }
+    },
+    ".ql-formats": {
+      ".ql-picker": {
+        backgroundColor: "$gray500",
+        "&-label": {
+          color: "$gray100",
+          "&.ql-active": {
+            color: "$writeme300"
+          }
+        },
+        "&-item": {
+          color: "$gray200",
+          "&:hover": {
+            color: "$writeme300"
+          }
+        },
+        "&::before": {
+          color: "$writeme300"
+        }
+      }
+    }
+  },
+  ".ql-toolbar": {
+    ".ql-formats": {
+      "&:hover": {
+        ".ql-picker-label": {
+          color: "$writeme300",
+          "&.ql-picker-active": {
+            color: "$writeme300"
+          },
+          svg: {
+            filter: "invert(54%) sepia(38%) saturate(5322%) hue-rotate(176deg) brightness(117%) contrast(91%)"
+          }
+        }
+      }
+    }
+  },
+  ".ql-editor": {
+    backgroundColor: "$gray900",
+    color: "$white",
+    width: "100%"
+  },
+  ".ql-blank::before": {
+    color: "$gray400"
+  },
+  "&:focus": {
+    outline: 0
+  },
+  "&:disabled": {
+    cursor: "not-allowed"
+  },
+  "&:placeholder": {
+    color: "$gray400"
+  }
+});
+
+// src/components/RichTextInput/index.tsx
+var import_jsx_runtime5 = require("react/jsx-runtime");
+function RichTextInput(_a) {
+  var props = __objRest(_a, []);
+  return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(QuillStyles, __spreadValues({}, props));
+}
+RichTextInput.displayName = "RichTextInput";
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Avatar,
@@ -536,6 +625,7 @@ MultiStep.displayName = "MultiStep";
   Checkbox,
   Heading,
   MultiStep,
+  RichTextInput,
   Text,
   TextArea,
   TextInput
