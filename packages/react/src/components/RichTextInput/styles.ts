@@ -30,17 +30,17 @@ export const QuillStyles = styled(ReactQuill, {
         '&-label': {
           color: '$gray100',
           '&.ql-active': {
-            color: '$writeme300',
+            color: '$cyan300',
           },
         },
         '&-item': {
           color: '$gray200',
           '&:hover': {
-            color: '$writeme300',
+            color: '$cyan300',
           },
         },
         '&::before': {
-          color: '$writeme300',
+          color: '$cyan300',
         },
       },
     },
@@ -49,9 +49,9 @@ export const QuillStyles = styled(ReactQuill, {
     '.ql-formats': {
       '&:hover': {
         '.ql-picker-label': {
-          color: '$writeme300',
+          color: '$cyan300',
           '&.ql-picker-active': {
-            color: '$writeme300',
+            color: '$cyan300',
           },
           svg: {
             filter:
