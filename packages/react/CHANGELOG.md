@@ -1,5 +1,11 @@
 # @writeme-ui/react
 
+## 1.3.1
+
+### Patch Changes
+
+- Add option to pass reference to TextInput and adjust some styles
+
 ## 1.3.0
 
 ### Minor Changes

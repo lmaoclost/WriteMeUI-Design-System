@@ -27,6 +27,10 @@ export const Button = styled('button', {
     cursor: 'not-allowed',
   },
 
+  '&:focus': {
+    boxShadow: '0 0 0 2px $colors$cyan300',
+  },
+
   variants: {
     variant: {
       primary: {
