@@ -1,5 +1,11 @@
 # @writeme-ui/react
 
+## 1.4.1
+
+### Patch Changes
+
+- Removed global Quill CSS
+
 ## 1.4.0
 
 ### Minor Changes
