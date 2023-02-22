@@ -1,10 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
+import 'react-quill/dist/quill.snow.css'
 import { Box, Text, RichTextInput, RichTextInputProps } from '@writeme-ui/react'
 
 export default {
   title: 'Form/Rich Text Input',
   component: RichTextInput,
-  args: {placeholder: "Enter your text here"},
+  args: { placeholder: "Enter your text here" },
   decorators: [
     (Story) => {
       return (
