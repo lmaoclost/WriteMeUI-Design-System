@@ -5,6 +5,7 @@
 ### Patch Changes
 
 - f84159d: Fixed global css import on react-quill
+
 - Removed ReactQuill
 
 ## 1.4.1
