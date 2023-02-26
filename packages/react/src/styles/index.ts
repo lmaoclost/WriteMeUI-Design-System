@@ -8,6 +8,7 @@ import {
   space,
 } from '@writeme-ui/tokens'
 import { createStitches, defaultThemeMap } from '@stitches/react'
+import type * as Stitches from '@stitches/react'
 
 export const {
   styled,
@@ -35,3 +36,5 @@ export const {
     space,
   },
 })
+
+export type CSS = Stitches.CSS<typeof config>

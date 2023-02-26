@@ -7,5 +7,7 @@ export * from './components/TextInput'
 export * from './components/TextArea'
 export * from './components/Checkbox'
 export * from './components/MultiStep'
+export * from './components/Collapsible'
+export * from './components/Accordion'
 
 export * from './styles'
