@@ -1,5 +1,12 @@
 # @writeme-ui/react
 
+## 1.5.0
+
+### Minor Changes
+
+- Added Accordion Component
+  Added Collapsible Component
+
 ## 1.4.2
 
 ### Patch Changes
