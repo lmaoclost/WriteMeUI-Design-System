@@ -1,5 +1,11 @@
 # @writeme-ui/react
 
+## 1.5.1
+
+### Patch Changes
+
+- Fixed Side Menu
+
 ## 1.5.0
 
 ### Minor Changes

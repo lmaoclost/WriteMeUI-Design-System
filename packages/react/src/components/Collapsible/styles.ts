@@ -3,49 +3,73 @@ import * as Collapsible from '@radix-ui/react-collapsible'
 import { styled } from '../../styles'
 
 export const CollapsibleRoot = styled(Collapsible.Root, {
-  width: 300,
+  display: 'flex',
+  flexDirection: 'column',
 })
 
 export const StyledTrigger = styled(Collapsible.Trigger, {
-  all: 'unset',
-  fontFamily: 'inherit',
-  borderRadius: '100%',
-  height: 25,
-  width: 25,
-  display: 'inline-flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  color: '$cyan500',
-  boxShadow: '0 2px 10px $colors$cyan300',
-  transition: 'all 0.2s cubic-bezier(0.87, 0, 0.13, 1)',
-  '[data-state=open] &': { transform: 'rotate(180deg)' },
-  '&:hover': { backgroundColor: '$cyan300' },
-  '&:focus': { boxShadow: `0 0 0 2px $colors$cyan300` },
-})
-
-export const Flex = styled('div', {
   display: 'flex',
-  justifyContent: 'space-between',
+  flexGrow: 1,
   alignItems: 'center',
+  border: 'none',
+  gap: '$2',
+  padding: '$1 $1',
+  color: '$gray300',
+  backgroundColor: 'transparent',
+  transition: 'all 0.2s ease-in-out',
+
+  svg: {
+    color: '$gray100',
+    transition: 'all 0.2s ease-in-out',
+  },
+
+  '&:hover': {
+    svg: {
+      color: '$cyan300',
+    },
+    span: {
+      color: '$cyan300',
+    },
+  },
+  '&:focus': { boxShadow: `0 0 0 2px $colors$cyan300` },
 })
 
 export const CollapsibleText = styled(Text, {
-  color: '$gray300',
-  fontSize: 15,
-  lineHeight: '25px',
+  display: 'flex',
+  alignItems: 'center',
+  gap: '$2',
+  color: '$gray100',
+  fontSize: '$xs',
+  lineHeight: '$shorter',
+  transition: 'all 0.2s ease-in-out',
 })
 
-export const Repository = styled('div', {
-  backgroundColor: '$gray600',
-  borderRadius: 4,
-  margin: '10px 0',
-  padding: 10,
-  boxShadow: '0 2px 10px $colors$cyan300',
+export const StyledContent = styled(Collapsible.Content, {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '$2',
+  borderRadius: '$xs',
+  fontSize: '$xs',
+  lineHeight: '$shorter',
+  cursor: 'pointer',
 
-  transition: 'all 0.2s cubic-bezier(0.87, 0, 0.13, 1)',
+  '&[data-state=open]': {
+    padding: '$1 $4 $1 $10',
+  },
 
-  '&:hover': { backgroundColor: '$cyan300' },
-  '&:focus': { boxShadow: `0 0 0 2px $colors$cyan300` },
+  transition: 'all 0.2s ease-in-out',
+
+  svg: {
+    color: '$gray100',
+    transition: 'all 0.2s ease-in-out',
+  },
+
+  '&:hover': {
+    svg: {
+      color: '$cyan300',
+    },
+    span: {
+      color: '$cyan300',
+    },
+  },
 })
-
-export const StyledContent = styled(Collapsible.Content, {})
