@@ -1,0 +1,2 @@
+import{A as t}from"./index-d59ac66f.js";import"./index-43ec82a8.js";import"./es.object.get-own-property-descriptor-037fa860.js";import"./index-648f2948.js";import"./jsx-runtime-1becbe17.js";const c={title:"Data display/Avatar",component:t,args:{src:"https://github.com/lmaoclost.png",alt:"Renan Souza Oliveira"},argTypes:{src:{control:{type:"text"}}}},p={},e={args:{src:void 0}},l=["Primary","WithFallback"];export{p as Primary,e as WithFallback,l as __namedExportsOrder,c as default};
+//# sourceMappingURL=Avatar.stories-41ad89f5.js.map
