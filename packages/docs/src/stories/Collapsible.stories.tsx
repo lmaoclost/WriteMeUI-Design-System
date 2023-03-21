@@ -1,33 +1,30 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Collapsible, Flex, Repository, CollapsibleTrigger, CollapsibleContent, Text } from '@writeme-ui/react'
+import { Collapsible, CollapsibleTrigger, CollapsibleContent, CollapsibleText } from '@writeme-ui/react'
+import { CaretDown, CaretRight, Folder, Planet } from 'phosphor-react'
+import { useState } from 'react';
 
 export default {
   title: 'Data display/Collapsible',
   component: Collapsible,
+  args: {
+    defaultOpen: false,
+  },
   decorators: [
-    () => {
+    (_, args) => {
+      const { defaultOpen } = args
+
+      const [isOpen, setIsOpen] = useState(defaultOpen);
       return (
-        <>
-          <Collapsible>
-            <Flex>
-              <Text>@peduarte starred 3 repositories</Text>
-              <CollapsibleTrigger />
-            </Flex>
+        <Collapsible open={isOpen} onOpenChange={setIsOpen}>
+          <CollapsibleTrigger>
+            {isOpen ? <CaretDown /> : <CaretRight />}
+            <CollapsibleText as="span"><Folder />Architecture</CollapsibleText>
+          </CollapsibleTrigger>
 
-            <Repository>
-              <Text>@radix-ui/primitives</Text>
-            </Repository>
-
-            <CollapsibleContent>
-              <Repository>
-                <Text>@radix-ui/colors</Text>
-              </Repository>
-              <Repository>
-                <Text>@stitches/react</Text>
-              </Repository>
-            </CollapsibleContent>
-          </Collapsible>
-        </>
+          <CollapsibleContent>
+            <CollapsibleText as="span"><Planet />Cenario</CollapsibleText>
+          </CollapsibleContent>
+        </Collapsible >
       )
     },
   ],

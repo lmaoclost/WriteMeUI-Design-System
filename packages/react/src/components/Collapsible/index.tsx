@@ -1,13 +1,10 @@
 import React, { ComponentProps } from 'react'
 import * as CollapsiblePrimitive from '@radix-ui/react-collapsible'
-import { CaretDown } from 'phosphor-react'
 
 import {
   CollapsibleRoot,
   StyledTrigger,
-  Flex as FlexContainer,
   CollapsibleText as Text,
-  Repository as ContentRepository,
   StyledContent,
 } from './styles'
 import { CSS } from '../../styles'
@@ -39,13 +36,10 @@ export const CollapsibleTrigger = React.forwardRef<
 >(({ children, ...props }, forwardedRef) => (
   <StyledTrigger {...props} ref={forwardedRef}>
     {children}
-    <CaretDown />
   </StyledTrigger>
 ))
 
-export const Flex = FlexContainer
 export const CollapsibleText = Text
-export const Repository = ContentRepository
 export const CollapsibleContent = StyledContent
 
 Collapsible.displayName = 'Collapsible'
