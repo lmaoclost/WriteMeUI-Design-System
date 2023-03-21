@@ -1,6 +1,6 @@
 {
   "name": "@writeme-ui/react",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -24,7 +24,6 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
-    "@radix-ui/react-accordion": "^1.1.0",
     "@radix-ui/react-avatar": "^1.0.1",
     "@radix-ui/react-checkbox": "^1.0.1",
     "@radix-ui/react-collapsible": "^1.0.1",
