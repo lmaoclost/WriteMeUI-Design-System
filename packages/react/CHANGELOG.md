@@ -1,5 +1,11 @@
 # @writeme-ui/react
 
+## 1.5.2
+
+### Patch Changes
+
+- Removed Accordion Component
+
 ## 1.5.1
 
 ### Patch Changes
