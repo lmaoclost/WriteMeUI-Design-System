@@ -37,16 +37,22 @@ export const StyledTrigger = styled(Collapsible.Trigger, {
 export const CollapsibleText = styled(Text, {
   display: 'flex',
   alignItems: 'center',
+  cursor: 'pointer',
   gap: '$2',
   color: '$gray100',
   fontSize: '$xs',
   lineHeight: '$shorter',
   transition: 'all 0.2s ease-in-out',
+
+  '&:hover': {
+    color: '$cyan300',
+  },
 })
 
 export const StyledContent = styled(Collapsible.Content, {
   display: 'flex',
-  alignItems: 'center',
+  alignItems: 'flex-start',
+  flexDirection: 'column',
   gap: '$2',
   borderRadius: '$xs',
   fontSize: '$xs',
@@ -54,22 +60,8 @@ export const StyledContent = styled(Collapsible.Content, {
   cursor: 'pointer',
 
   '&[data-state=open]': {
-    padding: '$1 $4 $1 $10',
+    padding: '$1 $4 $1 $6',
   },
 
   transition: 'all 0.2s ease-in-out',
-
-  svg: {
-    color: '$gray100',
-    transition: 'all 0.2s ease-in-out',
-  },
-
-  '&:hover': {
-    svg: {
-      color: '$cyan300',
-    },
-    span: {
-      color: '$cyan300',
-    },
-  },
 })
